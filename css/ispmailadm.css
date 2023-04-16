@@ -1,0 +1,445 @@
+/**
+**
+**
+** @package    ISPmail_Admin
+** @author     Ole Jungclaussen
+** @version    0.9.0
+**/
+body {
+    background-color: #FFFFFF;
+    font-family:Arial,sans-serif;
+    font-size:18px;
+    color: #343436;
+}
+a, a:visited, a:hover, a:active {
+    text-decoration:none;
+    color: #468CFF;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration:underline;
+}
+/**
+** #########################################################
+** LEVEL 0: BASIC PAGE ELEMENTS DIVISION
+**
+**/
+div#page {
+    position:relative;
+    margin: auto;
+    width: 90%;
+    min-height: 500px;
+    background-color: #FFFFFF;
+    border:2px solid #468CFF;
+    border-radius: 5px;
+    padding: 20px;
+}
+div#page_top {
+    
+}
+div#page_content {
+    margin-top: 30px;
+}
+div#page_footer {
+position: relative;
+    margin: auto;
+    width: 90%;
+    min-height: 500px;
+    background-color: #FFFFFF;
+    text-align: right;
+    font-size: 11px;
+    left: 20px;
+    margin-top: 3px;}
+/**
+** #########################################################
+** LEVEL 1: TOP DIVISION
+**
+**/
+table.page_top {
+    width:100%;
+}
+td.page_top_title {
+    padding:0;
+    padding-bottom:10px;
+    text-align:right;
+    vertical-align:bottom;
+}
+span.page_top_server {
+    color: #999;
+}
+div#page h1 {
+    margin:0;
+    padding:0;
+    color: #468CFF;
+    font-size: 40px;
+    padding: 0;
+}
+td.page_top_logo {
+    padding:0;
+    width:128px;
+    height:128px;
+}
+td.page_top_menu_container {
+    position:relative;
+    text-align:center;
+}
+table.page_top_menu {
+    margin-left:auto; 
+    margin-right:auto;
+}
+td#page_top_menu {
+    border: 1px solid #468CFF;
+    border-radius: 10px;
+    padding:3px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+    vertical-align:top;
+}
+div#page_menu {
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    color: #343436;
+}
+div#page_menu div.menu_entry {
+    float: left;
+}
+div#page_menu a.menu_entry {
+    color: #343436;
+}
+div#page_menu div.menu_sep {
+    margin-left:10px;
+    margin-right:10px;
+    float: left;
+}
+img.menu_logout {
+    position:absolute;
+    top:2px;
+    right:2px;
+    width:32px;
+    height:32px;
+    cursor:pointer;
+}
+/**
+** #########################################################
+** LEVEL 1: CONTENT DIVISION
+**
+**/
+
+div#page_content h2 {
+    margin:0;
+    margin-bottom:20px;
+    border:1px solid #468CFF;
+    border-radius:5px;
+    padding:2px;
+    padding-left:5px;
+    background-color:#73E7FF;
+    color:#468CFF;
+    font-size:24px;
+}
+/* CONTENT: CONTENT */
+div#page_content table.content {
+    width:100%;
+}
+div#page_content col.left {
+    width:70%;
+}    
+div#page_content col.right {
+    width:30%;
+}    
+div#page_content td#content {
+    padding:0px;
+    padding-right:20px;
+    text-align:left;
+    vertical-align:top;
+}
+/* CONTENT: HELP */
+div#page_content td#page_help {
+    border: 1px solid #468CFF;
+    border-radius: 10px;
+    padding:0px;
+    background-color:#8AFEFF;
+    text-align:left;
+    vertical-align:top;
+    font-size: 16px;
+}
+/**
+** #########################################################
+** LEVEL 2: CONTENT DIVISION
+**/
+ul.welcome {
+    
+}
+li.welcome {
+    margin-bottom:5px;
+}
+/**
+** ---------------------------------------------------------
+** CONTENT, LEVEL 2: HELP
+**/
+td#page_help div.Heading {
+    padding:15px;
+    padding-bottom:0px;
+}
+td#page_help ul {
+    margin-top:15px;
+    padding-right: 15px;
+}
+td#page_help li {
+    margin-bottom:5px;
+}
+/**
+** ---------------------------------------------------------
+** CONTENT, LEVEL 2: ADMIN
+**/
+td#content h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    border:1px solid #468CFF;
+    border-radius:5px;
+    padding: 2px;
+    padding-left: 5px;
+    color: #468CFF;
+    font-size: 16px;
+}
+/**
+** #########################################################
+** LEVEL 3: ELEMENTS
+**/
+/*
+* ----------------------------------------------------------
+* LISTING PAGE NAVIGATION
+*/
+div.DatabaseListPages {
+    text-align:right;
+    font-weight: normal;
+}    
+span.DatabaseListPages {
+    cursor:pointer;
+    text-decoration:underline;
+}
+span.DatabaseListPages[data-ondsp="1"] {
+    cursor: default;
+    text-decoration:none;
+    font-weight:bold;
+    color:#468CFF;
+}
+/*
+* ----------------------------------------------------------
+* DATABASE LISTING
+*/
+div.DatabaseList table.DatabaseList {
+    width:100%;
+    color: #343436;
+    font-size: 15px;
+    border-spacing:0;
+    border-collapse:collapse;
+    border:1px solid #73E7FF;
+    border-radius:5px;
+}
+div.DatabaseList tr.header {
+    background-color:#73E7FF;
+}    
+div.DatabaseList th {
+    padding:2px 4px 2px 4px;
+    background-color:#73E7FF;
+    text-align:left;
+    font-size: 15px;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+div.DatabaseList th.num {
+    vertical-align:top;
+    text-align:right;
+}
+div.DatabaseList tr {
+    border-bottom:1px solid #73E7FF;
+}
+div.DatabaseList td {
+    /* o r u l */
+    padding:2px 4px 2px 4px;
+    vertical-align:top;
+    text-align:left;
+}
+div.DatabaseList td.icon {
+    width: 16px;
+    text-align:center;
+    vertical-align:top;
+}
+div.DatabaseList img.icon {
+    height: 16px;
+    width: 16px;
+    cursor:pointer;
+}
+div.DatabaseList td.num {
+    text-align:right;
+}
+div.DatabaseList td.list {
+    font-size:12px;
+}
+div.DatabaseList input[type="text"], div.DatabaseList input[type="password"], div.DatabaseList input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 4px 7px;
+    outline: 0;
+    width: 275px;
+}
+div.DatabaseList input:focus {
+    border-color: #468CFF;
+}
+div.DatabaseList a.button {
+    margin-left:3px;
+    border:1px solid #468CFF;
+    border-radius:5px;
+    padding: 2px;
+    background-color: #73E7FF;
+    color: #468CFF;
+    font-size: 14px;
+    cursor:pointer;
+}
+table.DatabaseList table.DatabaseListSub1 {
+    width:100%;
+    color: #343436;
+    font-size: 15px;
+    border-spacing:0;
+}
+/*
+* ----------------------------------------------------------
+* INPUT FORM / FIELDS
+*/
+div.InputForm table.InputForm {
+    margin-bottom:20px;
+}    
+div.InputForm td {
+    border:0px solid black;
+    padding:0px;
+    padding-bottom:5px;
+    font-size: 15px;
+}
+div.InputForm td.label {
+    vertical-align:middle;
+    text-align:left;
+    padding-right:5px;
+}
+div.InputForm td.value {
+    vertical-align:middle;
+    text-align:left;
+}
+div.InputForm td.submit {
+    vertical-align:middle;
+    text-align:left;
+}
+div.InputForm td.submit_right {
+    padding-left:10px;
+    vertical-align:middle;
+    text-align:left;
+}
+div.InputForm input[type="text"], div.InputForm input[type="password"], div.InputForm input[type="number"]  {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 4px 7px;
+    outline: 0;
+    width: 275px;
+}
+div.InputForm input.readonly {
+    background-color:#EEEEEE;
+    color:#AAAAAA;
+}
+div.InputForm input:focus {
+    border-color: #468CFF;
+}
+div.InputForm a.button {
+    border:1px solid #468CFF;
+    border-radius:5px;
+    padding: 2px;
+    background-color: #73E7FF;
+    color: #468CFF;
+    font-size: 18px;
+    cursor:pointer;
+}
+div.InputForm select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 4px 7px;
+    outline: 0;
+    width: 275px;
+}
+/**
+** #########################################################
+** MISC
+** #########################################################
+**/
+/*
+* ----------------------------------------------------------
+* MSGBOX
+*/
+div.MsgSuccess, div.MsgError {
+    border-radius: 3px;
+    width: 400px;
+    min-height:30px;
+    margin: 0 auto 10px auto;
+    padding:10px 10px 10px 55px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-color: #FFFFFF;
+    color: #343436;
+}
+div.MsgSuccess {
+    background-image:url('../img/success.png');
+    border: 2px solid #0F0;
+}
+div.MsgError {
+    background-image: url('../img/error.png');
+    border: 2px solid #F00;
+}
+ul.Msg {
+    margin:0;
+}
+ul.Msg li {
+    margin:0;
+}
+
+input:focus {
+    border-color: #468CFF;
+}
+/*
+* ----------------------------------------------------------
+* LOGIN FORM
+*/
+form#login_form {
+    margin: auto;
+    border:3px solid #468CFF;
+    border-radius:5px;
+    background-color: #73E7FF;
+    width: 300px;
+    height: 170px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+form#login_form input[type="text"], form#login_form input[type="password"] {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 4px 7px;
+    outline: 0;
+    width:284px;
+}
+form#login_form input:focus {
+    border-color: #468CFF;
+}
+form#login_form input[type="submit"] {
+    border:1px solid #468CFF;
+    border-radius:5px;
+    padding: 2px;
+    padding-left: 5px;
+    background-color: #73E7FF;
+    color: #468CFF;
+    font-size: 18px;
+    cursor: pointer;
+}
